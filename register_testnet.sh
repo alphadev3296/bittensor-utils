@@ -14,4 +14,8 @@ echo "Hotkey: ${HOTKEY_TESTNET}"
 source .venv/bin/activate
 
 # register miner
-btcli subnet register --wallet.name ${WALLET_TESTNET} --wallet.hotkey ${HOTKEY_TESTNET} --subtensor.network test --netuid 116
+btcli subnet register \
+    --wallet.name ${WALLET_TESTNET} \
+    --wallet.hotkey ${HOTKEY_TESTNET} \
+    --subtensor.network test \
+    --netuid 116
